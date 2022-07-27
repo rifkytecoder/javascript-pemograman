@@ -16,7 +16,6 @@ console.log(hobi[2]);
 console.log(hobi[3]);
 
 // example #2
-
 const months = ['januari', 'februari', 'maret', 'april'];
 const days = ['senin', 'selasa', 'rabu', 'kamis'];
 
