@@ -1,0 +1,13 @@
+1. Instal editor
+2. terminal/Git
+3. JavaScript Runtime mulanya lingkungan web browser(console crome)
+4. Instal NodeJS LTS Runtime JS (untuk back-end)
+
+
+1.buat Folder MyProject
+2.npm init / npm init -y  "ketik di terminal"
+3.buat file index.js <console.log('Hello World);>
+     -> run terminal -> node index.js
+4.Run scripts(package.json)
+    "start" : "node index.js"
+    -> npm run start // di terminal
