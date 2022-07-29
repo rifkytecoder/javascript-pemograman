@@ -1,0 +1,39 @@
+NPM  Package Manager 📚📚📚
+
+perintah NPM🔥🔥🔥
+
+npm help         "melihat daftar command"
+npm <cmd> -h     "melihat cara menggunakan cmd tersebut"
+npm i/install <package> "untuk menginstall package"
+npm uninstall <package> "untuk mengunistall package"
+npm version      "melihat versi npm yg di gunakan"
+
+// sebelum nginstall pkg pastikan telah teringstal package.json 👌
+// jika belum <npm init -y> 🔥
+
+// ada 2 jenis instalasi local dan global
+    npm install <package>  // local- Package ini akan diletakkan di dalam folder node_modules.
+    npm install -g <package> // global package dipasang di satu tempat pada sistem perangkat kita
+
+!! Sebuah package harus diinstal secara global hanya saat ia menyediakan perintah 
+   yang dapat dieksekusi dari CLI dan digunakan kembali di semua project.
+   -npm, nodemon, mocha.
+
+!! umumnya package di install di local 👍
+
+!! terdapat 2 tipe object dependencies dalam berkas package.json.
+   1.object dependencies
+   2.object devDependencies  < npm install <package> --save-dev > 👍
+                             < npm uninstall <package> --save-dev > 👌
+Apa perbedaannya?
+Objek dependencies merupakan objek yang menampung package yang kita gunakan untuk membuat aplikasi.
+Sedangkan objek devDependencies digunakan untuk package yang berkaitan hanya saat proses pengembangan aplikasi,
+contohnya seperti package jest yang digunakan untuk testing. 👌
+
+!! package terpasang, maka akan ditambahkan ke berkas package.json.👍
+!! package-lock.json (automatis dibuat) juga mendefinisikan versi package(^ tilde) yang digunakan dengan lebih spesifik.👌
+
+!! import variableName from 'package-name'; "menggunkan package/module yg telah terinstal"👍
+
+
+
