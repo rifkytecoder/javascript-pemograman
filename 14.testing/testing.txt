@@ -1,0 +1,52 @@
+!! Unit test 🔥🔥🔥
+    Dilakukan untuk memastikan bahwa setiap unit kode yang kita tulis
+    sudah bisa bekerja sesuai harapan.
+    Unit sendiri berarti komponen terkecil yang dapat diuji secara terisolasi
+    dalam perangkat lunak yang kita buat, dapat berupa fungsi bahkan
+    kelas jika kita menggunakan paradigma OOP. Proses ini juga dapat diautomasikan.
+
+// Sehingga kita tidak perlu lagi melakukan uji secara manual satu persatu pada sebuah fungsi atau perintah.
+
+!! Ketika kita menulis sebuah kasus pengujian (test case), maka ada beberapa poin yang harus kita definisikan
+   terlebih dahulu:
+   1. Apa yang ingin diuji?
+   2. Ekspetasi apa yang di harapkan?
+
+!! Jest library 📚📚📚 👍
+   Jest merupakan salah satu framework testing paling populer untuk menuliskan kode pengujian pada bahasa pemrograman JavaScript.
+
+Tahapan:👍
+1.buat folder project
+2.npm init -y
+3.npm install --save-dev jest
+    package.json -> "test": "jest"  (membuat runner)
+
+## Menulis kode pengujian ##🔥
+test('deskripsi dari testcase kamu', () => {
+    expect(perintah).matcher(nilai yang diekspektasikan);
+});
+ 
+// contoh
+test('dua tambah dua adalah empat', () => {
+    expect(2+2).toBe(4);      //toBe adalah matcher
+});
+
+## Test secara Grouping/multitest <describe> 🔥
+describe('pengujian olah aritmatika', () => {
+   test('#1 dua tambah dua adalah empat', () => {
+        expect(2+2).toBe(4);
+   });
+ 
+   test('#2 dua kali tiga adalah enam', () => {
+        expect(2*3).toBe(6);
+   });
+});
+
+4. Setelah menuliskan kode contohKode.js
+5. buat folder _tests_
+6. 1 file test untuk 1 lingkup testing dengan format contohKode.test.js -> simpan di folder _tests_
+7. npm run test   " untuk running test Jest nya" 🔥
+
+## link refrensi
+https://jestjs.io/docs/using-matchers.
+https://devhints.io/jest      "cheatsheet jest" 👌
